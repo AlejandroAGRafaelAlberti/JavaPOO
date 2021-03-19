@@ -22,27 +22,16 @@ public class cinco_tres {
             }
             break;
         }
-        while (true){
-            if(nota<0.6){
-                System.out.println("Insuficiente");
-                break;
-            }
-            if(nota<0.7){
-                System.out.println("Suficiente");
-                break;
-            }
-            if(nota<0.8){
-                System.out.println("Bien");
-                break;
-            }
-            if(nota<0.9){
-                System.out.println("Notable");
-                break;
-            }
-            System.out.println("Sobresaliente");
-            break;
-            }
-        //no se como es el elif, asi que me ha quedado esto un poco raro
-        // no me funciona del to-do bien
+        if (nota < 0.6)
+        System.out.println("Insuficiente");
+        else if (nota >= 0.6 & nota < 0.7)
+        System.out.println("Suficiente");
+        else if (nota >= 0.7 & nota < 0.8)
+        System.out.println("Bien");
+        else if (nota >= 0.8 & nota < 0.9)
+        System.out.println("Notable");
+        else if (nota >= 0.9)
+        System.out.println("Sobresaliente");
+        // ya lo tengo como lo tenia hecho en python, y se usar el else if
     }
 }
