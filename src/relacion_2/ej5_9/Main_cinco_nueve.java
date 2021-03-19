@@ -11,7 +11,7 @@ public class Main_cinco_nueve {
     public static void main(String[] args) {
         Cuenta cuenta1 = new Cuenta(567,0);
         Cuenta cuenta2 = new Cuenta(568,700);
-        Persona Alejandro = new Persona("Nunca sabras mi dni >:D",cuenta1,cuenta2);
+        Persona Alejandro = new Persona("49986930H",cuenta1,cuenta2); // ok you got me
         System.out.println(Alejandro.toString());
         cuenta1.recibir_abono(1100);
         cuenta2.realizar_pago(750);
