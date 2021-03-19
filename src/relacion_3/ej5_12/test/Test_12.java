@@ -75,14 +75,12 @@ class Test_12 {
     @Test
     void Test_Autor_Arrays_anyadir_true(){
         assert (Arrays.equals(new Libro[5], miAutor.getLibros_escritos()));
-        assert (Arrays.equals(new String[5], miAutor.getLibros_T_escritos()));
         miAutor.anyadir_libro(miLibro);
         Libro[] example = new Libro[5];
         example[0] = miLibro;
         assert (Arrays.equals(example, miAutor.getLibros_escritos()));
         String[] example2 = new String[5];
         example2[0] = miLibro.getTitulo();
-        assert (Arrays.equals(example2, miAutor.getLibros_T_escritos()));
     }
     @Test
     void Test_Autor_Arrays_anyadir_False(){
