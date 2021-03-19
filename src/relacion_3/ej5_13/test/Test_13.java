@@ -31,11 +31,6 @@ public class Test_13 {
         assertEquals("Punto{x=6, y=9}",miPunto.toString());
     }
     @Test
-    void Test_puntos_iguales(){
-        Punto expected = new Punto(2,-2);
-        assert miPunto.puntos_iguales(expected);
-    }
-    @Test
     void Test_puntos_distancia(){
         Punto miPunto2 = new Punto(2,-6);
         assertEquals(0,miPunto.distancia(miPunto));

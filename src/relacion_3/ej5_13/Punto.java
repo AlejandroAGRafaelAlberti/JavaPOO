@@ -8,11 +8,6 @@ public class Punto {
         this.x = x;
         this.y = y;
     }
-
-    public boolean puntos_iguales(Punto punto_extranjero){
-        return x == punto_extranjero.getX() & y == punto_extranjero.getY();
-    }
-
     public double distancia(Punto punto_extranjero){
         int x2 = punto_extranjero.getX();
         int y2 = punto_extranjero.getY();
