@@ -22,10 +22,12 @@ public class Test_18 {
     void test_guitarra(){
         miguitarra.setCuerdas(7);
         assertEquals(7,miguitarra.getCuerdas());
+        assertEquals("Guitarra{cuerdas=7}",miguitarra.toString());
     }
     @Test
     void test_Flauta(){
         miFlauta.setOrificios(7);
         assertEquals(7,miFlauta.getOrificios());
+        assertEquals("Flauta{orificios=7}",miFlauta.toString());
     }
 }
