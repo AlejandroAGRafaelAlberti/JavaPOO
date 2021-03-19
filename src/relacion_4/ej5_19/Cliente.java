@@ -1,7 +1,7 @@
 package relacion_4.ej5_19;
 
 public class Cliente extends Persona{
-    private long id;
+    private final long id;
 
     public Cliente(String nombre, long id) {
         super(nombre);
@@ -16,6 +16,10 @@ public class Cliente extends Persona{
     public Cliente(String nombre, String apellidos, int edad, long id) {
         super(nombre, apellidos, edad);
         this.id = id;
+    }
+
+    public long getId() {
+        return id;
     }
 
     @Override

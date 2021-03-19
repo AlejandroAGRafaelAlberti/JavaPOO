@@ -22,6 +22,7 @@ public class Test_19 {
     }
     @Test
     void test_Personas(){
+        assertEquals(45, miCliente.getId());
         miCliente.setNombre("Ignacio");
         assertEquals("Ignacio",miCliente.getNombre());
         miCliente.setApellidos("Ignacio");
@@ -48,5 +49,12 @@ public class Test_19 {
         expected.remove(miCliente);
         assertEquals(expected,miGrupo.getComponentes());
         assertEquals("Grupo{componentes=[Proveedor{nombre='Pepa', apellidos='null', edad=0, codigo='007'}]}",miGrupo.toString());
+        Proveedor miProveedor2 = new Proveedor("xd","sip");
+        Proveedor miProveedor3 = new Proveedor("wow","sip");
+        assert miGrupo.registra(miProveedor2);
+        assert !(miGrupo.registra(miProveedor3));
+        assert miGrupo.borra(miProveedor3);
+        assert !(miGrupo.borra(miProveedor2));
+        //No se llama .getclass de example, no se como arreglarlo
     }
 }
